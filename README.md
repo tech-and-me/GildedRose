@@ -46,7 +46,7 @@ Quality is 80 and it never alters.
 
 ## Getting Started
 
-Clone the repository. Run build.bat from Powershell. If you see 
+Clone the repository. Run `dotnet build` from console, followed by `dotnet test`. If you see 
 output similar to the following screenshot, you are ready to 
 start refactoring.
 
