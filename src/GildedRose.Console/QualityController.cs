@@ -93,13 +93,7 @@ public class QualityController
 
     private void IncrementQuality(Item item, int amount)
     {
-        for (int i = 0; i < amount; i++)
-        {
-            if (item.Quality < 50)
-            {
-                item.Quality++;
-            }
-        }
+        item.Quality = Math.Min(50, item.Quality + amount);
     }
 
     private void DecrementQuality(Item item, int amount)
